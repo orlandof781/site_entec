@@ -1,13 +1,13 @@
 :root {
-  --bg: #0B1120; /* Fundo principal escuro */
-  --white: #ffffff; /* Mantido exclusivamente para textos em cima de gradientes */
+  --bg: #0B1120;
+  --white: #ffffff;
   --blue: #0D81F9;
   --purple: #7500E5;
   --pink: #DC1C7C;
-  --ink: #F8FAFC; /* Fonte principal agora é clara */
-  --ink-soft: #94A3B8; /* Fonte secundária num tom claro/acinzentado */
-  --line: #1E293B; /* Bordas e divisões escurecidas */
-  --surface: #151D2E; /* Fundo secundário (para seções alternadas) */
+  --ink: #F8FAFC;
+  --ink-soft: #94A3B8;
+  --line: #1E293B;
+  --surface: #151D2E;
   --grad-main: linear-gradient(110deg, var(--blue) 0%, var(--purple) 100%);
   --grad-bee: linear-gradient(110deg, var(--blue) 10%, var(--purple) 30%, var(--pink) 75%);
   --maxw: 1180px;
@@ -53,7 +53,10 @@ section {
   padding: 0 28px;
 }
 
-h1, h2, h3, h4 {
+h1,
+h2,
+h3,
+h4 {
   font-family: var(--font-display);
   font-weight: 700;
   line-height: 1.08;
@@ -61,7 +64,8 @@ h1, h2, h3, h4 {
 }
 
 .eyebrow {
-  font-family: var(--pink);
+  font-family: var(--font-mono);
+  /* Trocado para combinar com outras tags */
   font-size: .72rem;
   letter-spacing: .14em;
   text-transform: uppercase;
@@ -116,7 +120,7 @@ header.site {
   position: fixed;
   inset: 0 0 auto 0;
   z-index: 100;
-  background: rgba(11, 17, 32, .8); /* Transparência adaptada para fundo escuro */
+  background: rgba(11, 17, 32, .8);
   backdrop-filter: blur(14px);
   -webkit-backdrop-filter: blur(14px);
   border-bottom: 1px solid transparent;
@@ -145,7 +149,8 @@ header.site.scrolled {
 }
 
 .brand-logo-img {
-  height: 90px;
+  height: 50px;
+  /* Reduzido de 90px para caber perfeitamente na barra de 76px */
   width: auto;
   display: block;
   flex: none;
@@ -255,6 +260,8 @@ nav.links a.active::after {
   padding: 32px 28px;
   flex-direction: column;
   gap: 6px;
+  height: 100vh;
+  overflow-y: auto;
 }
 
 .mobile-panel.open {
@@ -278,11 +285,18 @@ nav.links a.active::after {
   nav.links {
     display: none;
   }
+
   .burger {
     display: flex;
   }
+
   .nav-cta.desktop-only {
     display: none;
+  }
+
+  .brand-sub {
+    display: none;
+    /* Ocultar texto secundário da logo no mobile para dar mais espaço */
   }
 }
 
@@ -380,8 +394,15 @@ nav.links a.active::after {
 }
 
 @keyframes pulse {
-  0%, 100% { opacity: 1; }
-  50% { opacity: .35; }
+
+  0%,
+  100% {
+    opacity: 1;
+  }
+
+  50% {
+    opacity: .35;
+  }
 }
 
 .hero-visual {
@@ -409,14 +430,17 @@ nav.links a.active::after {
   .hero-grid {
     grid-template-columns: 1fr;
   }
+
   .hero-visual {
     max-width: 320px;
     margin: 0 auto;
   }
+
   #imgprincipal {
     max-width: 100%;
     transform: none;
   }
+
   .hero {
     padding-top: 126px;
   }
@@ -496,14 +520,15 @@ nav.links a.active::after {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   gap: 22px;
-  height: 700px;
+  /* Removido o height: 700px; para permitir que o grid flua organicamente */
 }
 
 .esperar-card {
   background: var(--bg);
   border: 1px solid var(--line);
   border-radius: 20px;
-  padding: 34px 28px;
+  padding: 34px 28px 75px 28px;
+  /* Padding inferior aumentado para evitar conflito com botão absoluto */
   transition: transform .25s ease, box-shadow .25s ease, border-color .25s ease;
   position: relative;
   overflow: hidden;
@@ -588,6 +613,8 @@ nav.links a.active::after {
 @media (max-width: 880px) {
   .esperar-grid {
     grid-template-columns: 1fr;
+
+  
   }
 }
 
@@ -888,4 +915,11 @@ footer {
 .mini-logo {
   max-height: 20px;
   margin-right: 6px;
+}
+@media (max-width: 880px) {
+  .inscricao-button {
+    right: auto;
+    left: 50%;
+    transform: translateX(-50%);
+  }
 }

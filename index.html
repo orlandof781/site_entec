@@ -13,7 +13,6 @@
   <link
     href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@500;600;700&family=Inter:wght@400;500;600;700&family=JetBrains+Mono:wght@500&display=swap"
     rel="stylesheet">
-
 </head>
 
 <body>
@@ -56,7 +55,7 @@
             turmas de 1º, 2º e 3º anos do IFTO.</p>
           <div class="hero-ctas reveal in">
             <a href="#contato" class="btn btn-primary">Data</a>
-            <a href="#esperar" class="btn btn-ghost">Atvidades e Minicursos</a>
+            <a href="#esperar" class="btn btn-ghost">Atividades e Minicursos</a>
           </div>
         </div>
         <div class="hero-visual reveal in">
@@ -76,7 +75,7 @@
           </h2>
           <p style="margin-top:20px;">O ENTEC é um evento organizado pelos alunos do 3º ano do Curso Técnico em
             Informática para incentivar
-            novos possibilidades de aprendizado tecnológico fora da grade curricular.
+            novas possibilidades de aprendizado tecnológico fora da grade curricular.
           </p>
           <div class="sobre-tags">
             <span class="sobre-tag">Minicursos</span>
@@ -106,8 +105,6 @@
               <ul class="sub-card-list">
                 <li>
                   <p class="text-grad"><b>Robótica com lego ao lado do professor Wendel</b></p>
-                <li>
-                <li>
                 </li>
                 <li>
                   <p><b>Minicurso de Design para Jogos - Técnicas e conceitos usados por desenvolvedores na produção de
@@ -127,9 +124,8 @@
               convidados externos.</p>
             <div class="sub-card">
               <ul class="sub-card-list">
-                
                 <li>
-                  <p>-Apresentação do sistema Nucleo de Auxílio à Vida Acadêmica - <b>Lucas da Silva Lemos, Pedro Arthur
+                  <p>-Apresentação do sistema Núcleo de Auxílio à Vida Acadêmica - <b>Lucas da Silva Lemos, Pedro Arthur
                       Batista Carvalho, Leandro Alguma coisa</b></p>
                 </li>
                 <li>
@@ -147,14 +143,13 @@
               <ul class="sub-card-list">
                 <li>
                   <p><b>KAHOOT!</b></p>
-                <li>
+                </li>
                 <li>
                   <p><b>Campeonato de FIFA</b></p>
                 </li>
                 <li>
                   <p><b>Campeonato de JUST DANCE</b></p>
                 </li>
-
               </ul>
             </div>
             <a href="inscricoes_minicurso.html#interativas" class="btn btn-primary inscricao-button">Inscrições</a>
@@ -172,10 +167,9 @@
             <strong>Data a ser definida</strong>
             <ul class="data-list">
               <li data="data-list-item">Abertura / Palestras - 16/11</li>
-              <li>Mini-Curso -17/11</li>
+              <li>Mini-Curso - 17/11</li>
               <li>Campeonato - 18/11</li>
             </ul>
-
           </div>
         </div>
         <p class="form-msg" id="formMsg"></p>
@@ -266,13 +260,13 @@
 
       var form = document.getElementById('notifyForm');
       var msg = document.getElementById('formMsg');
-      form.addEventListener('submit', function (e) {
-        e.preventDefault();
-        msg.textContent = 'Prontinho — avisaremos você assim que o ENTEC 2026 estiver com inscrições abertas.';
-        form.reset();
-      });
-
-
+      if (form) {
+        form.addEventListener('submit', function (e) {
+          e.preventDefault();
+          msg.textContent = 'Prontinho — avisaremos você assim que o ENTEC 2026 estiver com inscrições abertas.';
+          form.reset();
+        });
+      }
     })();
   </script>
 </body>
