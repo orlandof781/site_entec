@@ -1,0 +1,280 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>ENTEC 2026 — Encontro dos Alunos dos Cursos Técnicos · IFTO Campus Palmas</title>
+  <meta name="description"
+    content="ENTEC — Encontro dos Alunos dos Cursos Técnicos. Um evento idealizado e conduzido pelos próprios estudantes do IFTO Campus Palmas.">
+  <link href="style.css" rel="stylesheet" type="text/css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@500;600;700&family=Inter:wght@400;500;600;700&family=JetBrains+Mono:wght@500&display=swap"
+    rel="stylesheet">
+
+</head>
+
+<body>
+
+  <header class="site" id="siteHeader">
+    <div class="wrap nav-inner">
+      <a href="entec-2026.html" class="brand">
+        <img class="brand-logo-img" src="assets/logo-img.png" alt="Logo do ENTEC 2026">
+        <small class="brand-sub">IFTO · Campus Palmas</small>
+      </a>
+      <nav class="links" id="navLinks">
+        <a href="#sobre">Sobre</a>
+        <a href="#esperar">O evento</a>
+        <a href="#inscricao">Inscreva-se</a>
+        <a href="#contato">Contato</a>
+      </nav>
+      <button class="burger" id="burgerBtn" aria-label="Abrir menu">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+    <div class="mobile-panel" id="mobilePanel">
+      <a href="#sobre">Sobre</a>
+      <a href="#esperar">O evento</a>
+      <a href="#inscricao">Inscreva-se</a>
+      <a href="#contato">Contato</a>
+    </div>
+  </header>
+
+  <main id="topo">
+        
+    <section class="section-pad" id="inscricao-detalhes">
+      <div class="wrap">
+        
+        <!-- Bloco: Minicursos -->
+        <div class="section-head">
+          <span class="divider-dot"></span>
+          <span class="eyebrow" style="margin-top:14px; display:inline-flex;">Inscrições</span>
+          <h2>Minicursos</h2>
+          <p class="lead" style="margin-top: 10px;">Oficinas que ensinam habilidades necessárias para o mundo da informática e novas possibilidades para o uso da tecnologia.</p>
+        </div>
+
+        <div class="inscricao-grid">
+          <!-- Card 1 -->
+          <div class="inscricao-card reveal">
+            <div class="inscricao-card-header">
+              <img src="assets/lego.png" alt="Ícone de robótica" class="inscricao-icon">
+              <h3>Robótica com Lego</h3>
+            </div>
+            <div class="inscricao-card-body">
+              <p>Aprenda os princípios da robótica de forma prática ao lado do professor Wendel.</p>
+            </div>
+            <div class="inscricao-card-footer">
+              <a href="https://forms.gle/WuNtjcKTcU9LtQ2g7" class="btn btn-primary">Inscrever-se</a>
+            </div>
+          </div>
+
+          <!-- Card 2 -->
+          <div class="inscricao-card reveal">
+            <div class="inscricao-card-header">
+              <img src="assets/git-icon.png" alt="Ícone de Git" class="inscricao-icon">
+              <h3>Introdução ao Git e GitHub</h3>
+            </div>
+            <div class="inscricao-card-body">
+              <p>Domine o versionamento de código, uma ferramenta essencial para qualquer desenvolvedor.</p>
+            </div>
+            <div class="inscricao-card-footer">
+              <a href="https://forms.gle/QtJushik2UPknytt6" class="btn btn-primary">Inscrever-se</a>
+            </div>
+          </div>
+
+          <!-- Card 3 -->
+          <div class="inscricao-card reveal">
+            <div class="inscricao-card-header">
+              <img src="assets/design-icon.png" alt="Ícone de design" class="inscricao-icon">
+              <h3>Design para Jogos</h3>
+            </div>
+            <div class="inscricao-card-body">
+              <p>Técnicas e conceitos usados por desenvolvedores na produção de personagens.</p>
+            </div>
+            <div class="inscricao-card-footer">
+              <a href="https://forms.gle/VshQNkJbt65iFpEp9" class="btn btn-primary">Inscrever-se</a>
+            </div>
+          </div>
+
+          <!-- Card 4 -->
+          <div class="inscricao-card reveal" >
+            <div class="inscricao-card-header">
+              <img src="assets/html-icon.png" alt="Ícone de HTML" class="inscricao-icon">
+              <h3>Press Start: HTML, CSS e JS</h3>
+            </div>
+            <div class="inscricao-card-body">
+              <p>Uso prático de HTML, CSS e JavaScript focado no desenvolvimento de jogos na web.</p>
+            </div>
+            <div id="interativas" class="inscricao-card-footer">
+              <a href="https://docs.google.com/forms/d/e/1FAIpQLSf5XFwd92KWGV2iISF3BQC2aHbIEm8888BMt0iaz3wXI7SKXQ/viewform" class="btn btn-primary">Inscrever-se</a>
+            </div>
+          </div>
+        </div>
+
+        <!-- Bloco: Atividades Interativas -->
+        <div  class="section-head" style="margin-top: 88px;">
+          <span class="divider-dot"></span>
+          <span  class="eyebrow" style="margin-top:14px; display:inline-flex;">Integração</span>
+          <h2>Atividades Interativas</h2>
+          <p class="lead" style="margin-top: 10px;">Competições de jogos amados pela comunidade acadêmica.</p>
+        </div>
+
+        <div class="inscricao-grid">
+          <!-- Card 1 -->
+          <div class="inscricao-card reveal">
+            <div class="inscricao-card-header">
+              <img src="assets/kahoot.png" alt="Ícone do Kahoot" class="inscricao-icon">
+              <h3>KAHOOT!</h3>
+            </div>
+            <div class="inscricao-card-body">
+              <p>Teste seus conhecimentos gerais e específicos em uma competição interativa e rápida.</p>
+            </div>
+          </div>
+
+          <!-- Card 2 -->
+          <div class="inscricao-card reveal">
+            <div class="inscricao-card-header">
+              <img src="assets/fifa-icon.webp" alt="Ícone de FIFA" class="inscricao-icon">
+              <h3>Campeonato de FIFA</h3>
+            </div>
+            <div class="inscricao-card-body">
+              <p>Mostre suas habilidades no controle e dispute o título de campeão de FIFA do ENTEC.</p>
+            </div>
+          </div>
+
+          <!-- Card 3 -->
+          <div class="inscricao-card reveal">
+            <div class="inscricao-card-header">
+              <img src="assets/just-icon.png" alt="Ícone de Just Dance" class="inscricao-icon">
+              <h3>Campeonato de JUST DANCE</h3>
+            </div>
+            <div class="inscricao-card-body">
+              <p>Prepare a coreografia e venha competir pela melhor pontuação na pista de dança.</p>
+            </div>
+          </div>
+
+          <!-- Card 4: Free Fire -->
+          <div class="inscricao-card reveal">
+             <div class="inscricao-card-header">
+                <img src="assets/freefire.png"
+                 alt="Ícone do Free Fire"
+               class="inscricao-icon">
+           <h3>Campeonato de Free Fire</h3>
+       </div>
+
+      <div class="inscricao-card-body">
+             <p>Participe do campeonato de Free Fire e mostre suas habilidades em equipe.</p>
+           </div>
+         </div>
+               </div>
+
+        <!-- Botão único para inscrição nas atividades -->
+        <div style="text-align: center; margin-top: 30px;">
+          <a href="https://forms.gle/tz57SLSjyLk3tjLYA"
+             class="btn btn-primary"
+             target="_blank"
+             rel="noopener noreferrer">
+            Inscrever-se nas atividades
+          </a>
+        </div>
+
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <div class="wrap">
+      <div class="footer-grid">
+        <div class="footer-brand">
+          <a href="#topo" class="brand">
+            <img class="brand-logo-img brand-logo-img--footer" src="assets/logo-img.png" alt="Logo do ENTEC 2026">
+            <small class="brand-sub">IFTO · Campus Palmas</small>
+          </a>
+          <p>Encontro dos Alunos dos Cursos Técnicos — um evento acadêmico‑pedagógico idealizado e conduzido pelos
+            estudantes do Curso Técnico em Informática do IFTO Campus Palmas.</p>
+        </div>
+        <div class="footer-col">
+          <h5>Instituição</h5>
+          <p>IFTO — Campus Palmas</p>
+          <p>Curso Técnico em Informática</p>
+        </div>
+        <div class="footer-col">
+          <h5>Orientação do projeto</h5>
+          <p>Prof. Thiago Guimarães Tavares</p>
+          <a href="mailto:thiagogmta@ifto.edu.br">thiagogmta@ifto.edu.br</a>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <span>© 2026 ENTEC — Evento de Tecnologia do IFTO Campus Palmas. Todos os direitos reservados.</span>
+        <span>Projeto conduzido por estudantes, para estudantes.</span>
+      </div>
+    </div>
+  </footer>
+
+  <button id="top-btn" aria-label="Voltar ao topo">↑</button>
+
+  <script>
+    (function () {
+      "use strict";
+
+      var header = document.getElementById('siteHeader');
+      var topBtn = document.getElementById('top-btn');
+      function onScroll() {
+        var y = window.scrollY || document.documentElement.scrollTop;
+        header.classList.toggle('scrolled', y > 8);
+        topBtn.classList.toggle('show', y > 500);
+      }
+      document.addEventListener('scroll', onScroll, { passive: true });
+      onScroll();
+      topBtn.addEventListener('click', function () { window.scrollTo({ top: 0, behavior: 'smooth' }); });
+
+      var burger = document.getElementById('burgerBtn');
+      var panel = document.getElementById('mobilePanel');
+      burger.addEventListener('click', function () { panel.classList.toggle('open'); });
+      panel.querySelectorAll('a').forEach(function (a) {
+        a.addEventListener('click', function () { panel.classList.remove('open'); });
+      });
+
+      var sections = ['sobre', 'esperar', 'contato'];
+      var navAnchors = document.querySelectorAll('nav.links a');
+      var spyObserver = new IntersectionObserver(function (entries) {
+        entries.forEach(function (entry) {
+          if (entry.isIntersecting) {
+            navAnchors.forEach(function (a) {
+              a.classList.toggle('active', a.getAttribute('href') === '#' + entry.target.id);
+            });
+          }
+        });
+      }, { rootMargin: '-45% 0px -50% 0px' });
+      sections.forEach(function (id) {
+        var el = document.getElementById(id);
+        if (el) spyObserver.observe(el);
+      });
+
+      var revealEls = document.querySelectorAll('.reveal:not(.in)');
+      var revealObserver = new IntersectionObserver(function (entries, obs) {
+        entries.forEach(function (entry) {
+          if (entry.isIntersecting) {
+            entry.target.classList.add('in');
+            obs.unobserve(entry.target);
+          }
+        });
+      }, { threshold: .15 });
+      revealEls.forEach(function (el) { revealObserver.observe(el); });
+
+      var form = document.getElementById('notifyForm');
+      var msg = document.getElementById('formMsg');
+      form.addEventListener('submit', function (e) {
+        e.preventDefault();
+        msg.textContent = 'Prontinho — avisaremos você assim que o ENTEC 2026 estiver com inscrições abertas.';
+        form.reset();
+      });
+
+      
+    })();
+  </script>
+</body>
+
+</html>
