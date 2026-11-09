@@ -722,6 +722,12 @@ nav.links a.active::after {
   gap: 28px;
 }
 
+.inscricao-grid-minic{
+  display: flex;
+  gap:28px;
+} 
+
+
 .inscricao-card {
   background: var(--bg);
   border: 1px solid var(--line);
@@ -802,6 +808,11 @@ nav.links a.active::after {
 
 @media (max-width: 880px) {
   .inscricao-grid {
+    grid-template-columns: 1fr;
+    display: grid;
+  }
+  .inscricao-grid-minic {
+    display: grid;
     grid-template-columns: 1fr;
   }
 }
