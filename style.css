@@ -934,3 +934,14 @@ footer {
     transform: translateX(-50%);
   }
 }
+.warning{
+  width: 90%;
+  background: #FF0000;
+  border-radius: 10px;
+  padding: 20px;
+  margin: 20px auto;
+  height: 150px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
