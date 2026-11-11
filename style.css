@@ -740,6 +740,14 @@ nav.links a.active::after {
   overflow: hidden;
   min-height: 280px;
 }
+.lotado {
+  background: rgb(138, 68, 68);
+
+}
+.lotado-button{
+  background: red;
+}
+
 
 .inscricao-card::before {
   content: "";
@@ -772,6 +780,12 @@ nav.links a.active::after {
 }
 
 .inscricao-icon {
+  width: 48px;
+  height: 48px;
+  object-fit: contain;
+  flex-shrink: 0;
+}
+.inscricao-icon-lotado {
   width: 48px;
   height: 48px;
   object-fit: contain;
